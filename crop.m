@@ -34,6 +34,7 @@ while loop1
 end
 
 %% Bed cropping
+if isempty(obj.BedLog)
 button = questdlg('Would you like to select bed times?','','Yes','No','Yes');
 if strcmpi(button,'Yes')
     loop1 = true;
@@ -76,6 +77,7 @@ if strcmpi(button,'Yes')
         end
         
     end
+end
 end
 
 %% Error cropping
